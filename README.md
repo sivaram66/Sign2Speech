@@ -89,12 +89,6 @@ Access the app at `http://127.0.0.1:8000/`
 - Build a mobile-friendly UI.
 - Integrate with real-time video streaming.
 
-## Contributors
-- **Your Name** - Developer & AI Engineer
 
-## License
-This project is licensed under the MIT License.
-
----
 Feel free to contribute and improve the project! 🚀
 
