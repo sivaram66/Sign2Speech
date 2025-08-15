@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate - Sign Language Translator</title>
+    <link rel="stylesheet" href="{% static 'translate.css' %}">
+    <link rel="stylesheet" href="{% static 'common.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SignTranslate</div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'translate' %}" class="active">Translate</a>
+        </div>
+    </nav>
+
+    <main class="translator">
+        <div class="video-container">
+            <video id="videoFeed" autoplay playsinline></video>
+            <button id="startCamera" class="control-button">Start Camera</button>
+        </div>
+        
+        <div class="translation-container">
+            <div class="translation-box">
+                <h3>Translation</h3>
+                <div id="translationText" class="translation-content"></div>
+            </div>
+            <div class="controls">
+                <button id="downloadBtn" class="control-button">Download Text</button>
+                <button id="shareBtn" class="control-button">Share</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SignTranslate. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/translate.js' %}"></script>
+</body>
+</html>

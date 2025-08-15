@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="{% static 'common.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SignTranslate</div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}" class="active">Home</a>
+            <a href="{% url 'translate' %}">Translate</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Breaking Barriers in Communication</h1>
+            <p>Transform sign language into text in real-time using AI technology</p>
+            <a href="{% url 'translate' %}" class="cta-button">Start Translation</a>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Real-time Translation</h3>
+                <p>Instant sign language to text conversion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>AI Powered</h3>
+                <p>Advanced machine learning for accurate results</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Accessible</h3>
+                <p>Works on any device with a camera</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SignTranslate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
