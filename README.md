@@ -90,5 +90,3 @@ Access the app at `http://127.0.0.1:8000/`
 - Integrate with real-time video streaming.
 
 
-Feel free to contribute and improve the project! 🚀
-
